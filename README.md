@@ -1,3 +1,3 @@
 # SJTU_2023_IS_NETFILTER
 makefile一般不会做出更新，其他的内容会在改动后上传
-在编译的时候记得将.c文件改为mod_firewall.c,因为Makefile还没有做具体修改，直接编译可能会导致编译失败
+//在编译的时候记得将.c文件改为mod_firewall.c,因为Makefile还没有做具体修改，直接编译可能会导致编译失败
