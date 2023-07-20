@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>推荐歌曲</title>
+</head>
+<body>
+  <h1>推荐歌曲次数</h1>
+  <div id="songCountContainer"></div>
+
+  <script>
+    // 获取URL参数songCount
+    const urlParams = new URLSearchParams(window.location.search);
+    const songCount = urlParams.get('songCount');
+
+    // 将推荐歌曲次数显示在页面上
+    const songCountContainer = document.getElementById('songCountContainer');
+    songCountContainer.textContent = `您的推荐歌曲次数： ${songCount}`;
+  </script>
+</body>
+</html>
