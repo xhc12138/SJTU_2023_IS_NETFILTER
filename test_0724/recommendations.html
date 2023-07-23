@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>推荐歌曲</title>
+  <style>
+    /* Set background image for the body */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('back2.png'); /* Replace with your background image URL */
+      background-size: cover; /* Make the background image cover the entire body */
+      background-position: center; /* Center the background image */
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #result-container {
+      max-width: 600px;
+      margin: 10px auto;
+      background-color: rgba(255, 255, 255, 0.8); /* Add a transparent background color to the container */
+      padding: 20px; /* Add some padding to the container */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>推荐歌曲</h1>
+  <div id="result-container"></div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="recommendations.js"></script>
+</body>
+</html>
